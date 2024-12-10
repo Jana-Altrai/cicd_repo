@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/health", methods=["GET"])
 def health_check():
-    return jsonify({"status": "ok"}), 200
+    return jsonify({"status": "ok"}), 201
 
 
 # The new endpoint you’re adding on the feature branch
